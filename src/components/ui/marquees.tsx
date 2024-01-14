@@ -28,7 +28,6 @@ const Marquees = ({ direction }: MarqueeProps) => {
         <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
         <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
         <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
-        <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
       </Marquee>
     </>
   );
