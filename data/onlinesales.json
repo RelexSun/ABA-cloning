@@ -1,0 +1,32 @@
+[
+  {
+    "id": "E-Commerce",
+    "title": "E-Commerce",
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+  },
+  {
+    "id": "Credentials on File",
+    "title": "Credentials on File",
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+  },
+  {
+    "id": "Payment Link",
+    "title": "Payment Link",
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+  },
+  {
+    "id": "Payment QR API",
+    "title": "Payment QR API",
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+  },
+  {
+    "id": "Invoicing Tool",
+    "title": "Invoicing Tool",
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+  },
+  {
+    "id": "Virtual Terminal",
+    "title": "Virtual Terminal",
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+  }
+]

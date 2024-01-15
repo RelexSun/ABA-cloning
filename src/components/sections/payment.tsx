@@ -1,6 +1,18 @@
-import CardContainer from "@/components/card-container";
+import Tabs from "@/components/tabs";
+import OnlineSales from "@/components/sections/onlinesales";
+import InStore from "./instoresales";
+import PayOn from "./payondelivery";
+import SocialCommerce from "./socialcommerce";
+import { TabProps } from "../../../types/interface";
+import { motion } from "framer-motion";
 
 const PaymentSection = () => {
+  const tabs: TabProps[] = [
+    { label: "for online sales", content: <OnlineSales /> },
+    { label: "for in-store sales", content: <InStore /> },
+    { label: "for social commerce", content: <SocialCommerce /> },
+    { label: "for pay-on-delivery", content: <PayOn /> },
+  ];
   return (
     <div>
       <div className="w-60">
@@ -13,9 +25,7 @@ const PaymentSection = () => {
         business type and its offerings you can easily accept cashless payments
         in both KHR and USD currencies.
       </p>
-      <div className="mt-4">
-        <CardContainer />
-      </div>
+      <Tabs tabs={tabs} />
     </div>
   );
 };
