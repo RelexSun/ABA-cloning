@@ -15,7 +15,7 @@ const PaymentSection = () => {
   ];
   return (
     <div>
-      <div className="w-60">
+      <div className="w-80">
         <h1 className="text-2xl font-bold mb-3">
           Payment Solutions for All Business Needs
         </h1>

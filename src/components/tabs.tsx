@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { TabProps } from "../../types/interface";
+import { set } from "lodash";
 
 const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
   const [active, setActive] = useState<number>(0);
@@ -11,6 +12,11 @@ const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
     initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0 },
     exit: { opacity: 0, x: -100 },
+  };
+  const animationBorder = {
+    initial: { scaleX: 0, x: 100 },
+    animate: { scaleX: 1, x: 0 },
+    exit: { scaleX: 0, x: -100 },
   };
 
   const handleTabClick = (index: number) => {
@@ -22,16 +28,9 @@ const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
       <div className="relative">
         <div className="flex justify-start scroll-menu overflow-x-scroll mt-6 text-nowrap lg:justify-center">
           {tabs.map((tab, index) => (
-            <motion.div
+            <div
               key={index}
-              className={
-                active === index
-                  ? "border-b-4 border-cyan-500 text-cyan-500"
-                  : ""
-              }
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3 }}
+              className={active === index ? "text-cyan-500" : ""}
             >
               <button
                 className="pb-3 px-8"
@@ -39,20 +38,37 @@ const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
               >
                 <p className="text-sm sm:text-base md:text-lg">{tab.label}</p>
               </button>
-            </motion.div>
+              <AnimatePresence mode="wait">
+                {active === index && (
+                  <motion.div
+                    key={index}
+                    className=" w-full h-1 bg-cyan-500"
+                    variants={animationBorder}
+                    initial="initial"
+                    animate="animate"
+                    exit="exit"
+                    transition={{ duration: 0.2 }}
+                  ></motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           ))}
           <div className="w-10 h-10 absolute right-0 gradient-background"></div>
         </div>
       </div>
-      <motion.div
-        className="mt-8 border"
-        variants={animation}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-      >
-        {tabs[active].content}
-      </motion.div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={active}
+          className="mt-8"
+          variants={animation}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.5 }}
+        >
+          {tabs[active].content}
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 };
