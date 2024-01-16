@@ -1,0 +1,32 @@
+[
+  {
+    "id": "Greate Check-Out Experience",
+    "title": "Greate Check-Out Experience",
+    "description": "Attract more clients and keep them loyal by offering a smooth payment experience during checkout."
+  },
+  {
+    "id": "Instant Payments",
+    "title": "Instant Payments",
+    "description": "Enjoy accepting instant payments from your clients with multiple payment methods."
+  },
+  {
+    "id": "Auto Payment",
+    "title": "Auto Payment",
+    "description": "Automate recurring payments from your clients with their stored payment option details."
+  },
+  {
+    "id": "Flexible Integration",
+    "title": "Flexible Integration",
+    "description": "PayWay offers a variety of integration options to suit your business needs and technical capabilities."
+  },
+  {
+    "id": "Secure",
+    "title": "Secure",
+    "description": "Using data encryption, 3DS 2.0 protocol and rules based fruad detection."
+  },
+  {
+    "id": "24/7 Support",
+    "title": "24/7 Support",
+    "description": "Our support team is available 24/7 via phone, email or live chat."
+  }
+]

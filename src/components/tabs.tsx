@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { TabProps } from "../../types/interface";
-import { set } from "lodash";
 
 const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
   const [active, setActive] = useState<number>(0);
@@ -33,7 +32,7 @@ const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
               className={active === index ? "text-cyan-500" : ""}
             >
               <button
-                className="pb-3 px-8"
+                className="pb-3 px-8 uppercase"
                 onClick={() => handleTabClick(index)}
               >
                 <p className="text-sm sm:text-base md:text-lg">{tab.label}</p>

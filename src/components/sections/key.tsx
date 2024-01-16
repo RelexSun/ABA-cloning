@@ -1,10 +1,10 @@
-import React from "react";
+import Testimonial from "@/components/testimonial";
 
 const KeySection = () => {
   return (
-    <div className="bg-slate-500 w-full h-60 flex flex-col">
-      <h1 className="text-xl font-bold">Key business</h1>
-      <div></div>
+    <div className="w-full flex flex-col gap-16 mt-16">
+      <h1 className="text-xl font-bold text-center">Key Advantages</h1>
+      <Testimonial />
     </div>
   );
 };
