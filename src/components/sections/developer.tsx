@@ -13,7 +13,7 @@ const DeveloperSection = () => {
 
   return (
     <div className="mt-16 grid gap-20 ">
-      <div className=" flex flex-col sm:flex-row-reverse gap-10">
+      <div className=" flex flex-col items-center sm:flex-row-reverse gap-10">
         <div className="w-full">
           <h1 className="text-xl font-bold ">Multiple Payment Methods</h1>
           <p>
@@ -25,7 +25,7 @@ const DeveloperSection = () => {
         </div>
         <div className="img w-full h-60 bg-cyan-500" data-aos="zoom-out"></div>
       </div>
-      <div className="flex flex-col sm:flex-row gap-10">
+      <div className="flex flex-col items-center sm:flex-row gap-10">
         <div className="w-full">
           <h1 className="text-xl font-bold ">Real-time Merchant Portal</h1>
           <p>
@@ -38,7 +38,7 @@ const DeveloperSection = () => {
         <div className="img w-full h-60 bg-cyan-500" data-aos="zoom-out"></div>
       </div>
 
-      <div className="flex flex-col sm:flex-row-reverse gap-10">
+      <div className="flex flex-col items-center sm:flex-row-reverse gap-10">
         <div className="w-full">
           <h1 className="text-xl font-bold">Ready for Developers</h1>
           <p>

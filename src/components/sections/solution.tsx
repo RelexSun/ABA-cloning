@@ -15,6 +15,10 @@ const SolutionSection = () => {
           <span></span>
           <span></span>
         </div>
+        <p>
+          Boost your sales by providing seamless payment experience to your
+          clients.
+        </p>
         <Button>Explore Now</Button>
       </div>
     </div>
