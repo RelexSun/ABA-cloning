@@ -12,7 +12,7 @@ const DeveloperSection = () => {
   }, []);
 
   return (
-    <div className="mt-16 grid gap-20 ">
+    <div className="mt-16 grid gap-20 overflow-hidden">
       <div className=" flex flex-col items-center sm:flex-row-reverse gap-10">
         <div className="w-full">
           <h1 className="text-xl font-bold ">Multiple Payment Methods</h1>

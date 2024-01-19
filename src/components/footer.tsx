@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { Button } from "./ui/button";
 
 export const Footer = () => {
   return (
-    <div className="bg-[#011730] pb-10 sm:pb-16 md:pb-[43px] lg:pb-[47px] xl:pb-[45px] relative">
-      <div className="px-3.5 pt-8 sm:block md:hidden lg:hidden 2xl:hidden container">
+    <div className="bg-[#011730] w-full pb-10 sm:pb-16 md:pb-[43px] lg:pb-[47px] xl:pb-[45px] relative">
+      <div className="px-3.5 pt-8  sm:block md:hidden lg:hidden 2xl:hidden container">
         <div className="border w-40 h-[30px]"></div>
         <div className="grid grid-cols-2 mt-8">
           <div className="flex">
@@ -127,7 +126,7 @@ export const Footer = () => {
 
       {/* ---------------------------------------- */}
 
-      <div className="md:block sm:hidden lg:hidden 2xl:hidden pt-8 container">
+      <div className="md:block max-sm:hidden sm:hidden lg:hidden 2xl:hidden pt-8 container">
         <div className="grid grid-cols-3 mt-3 px-3.5">
           <div className="border w-40 h-[30px]"></div>
           <div className="flex">
@@ -252,7 +251,7 @@ export const Footer = () => {
 
       {/* ---------------------------------------- */}
 
-      <div className="lg:block sm:hidden md:hidden 2xl:hidden container">
+      <div className="lg:block max-sm:hidden sm:hidden md:hidden 2xl:hidden container">
         <div className="grid grid-cols-3 mt-3 px-3.5">
           <div className="border w-40 h-[34px]"></div>
           <div className="flex">
@@ -377,16 +376,16 @@ export const Footer = () => {
 
       {/* ---------------------------------------- */}
 
-      <div className="2xl:block sm:hidden md:hidden lg:hidden container flex">
-        <div className="flex justify-between pt-[47px] lg:pl-3.5 xl:pl-0">
+      <div className="2xl:flex max-sm:hidden 2xl:justify-evenly sm:hidden md:hidden lg:hidden container ">
+        <div className="flex flex-col items-start justify-between pt-[47px] lg:pl-3.5 xl:pl-0">
           <div className="border w-40 h-[34px]"></div>
           <div className="flex">
             <Button className="mr-3"></Button>
             <Button></Button>
           </div>
-          <div className="flex items-center">
+          <div className="flex">
             <Button></Button>
-            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto  ml-3">
+            <span className="text-lg text-white font-light opacity-50  font-roboto  ml-3">
               Phone number
             </span>
           </div>
