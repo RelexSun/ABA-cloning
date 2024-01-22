@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export const Footer = () => {
   return (
     <div className="bg-[#011730] w-full pb-10 sm:pb-16 md:pb-[43px] lg:pb-[47px] xl:pb-[45px] relative">
-      <div className="px-3.5 pt-8  sm:block md:hidden lg:hidden 2xl:hidden container">
+      <div className="px-10 pt-8 sm:hidden md:hidden lg:hidden 2xl:hidden container">
         <div className="border w-40 h-[30px]"></div>
         <div className="grid grid-cols-2 mt-8">
           <div className="flex">
@@ -18,7 +18,7 @@ export const Footer = () => {
           </div>
         </div>
         <hr className="bg-white opacity-10 mt-[30px]" />
-        <div className="grid grid-cols-2 sm:grid-cols-3">
+        <div className="grid grid-cols-2 ">
           <div className="mt-4">
             <ul className="text-sm text-white font-light ">
               <li className="text-white font-medium text-base">Products</li>
@@ -126,7 +126,7 @@ export const Footer = () => {
 
       {/* ---------------------------------------- */}
 
-      <div className="md:block max-sm:hidden sm:hidden lg:hidden 2xl:hidden pt-8 container">
+      <div className="sm:block max-sm:hidden lg:hidden 2xl:hidden pt-8 container">
         <div className="grid grid-cols-3 mt-3 px-3.5">
           <div className="border w-40 h-[30px]"></div>
           <div className="flex">
@@ -251,8 +251,8 @@ export const Footer = () => {
 
       {/* ---------------------------------------- */}
 
-      <div className="lg:block max-sm:hidden sm:hidden md:hidden 2xl:hidden container">
-        <div className="grid grid-cols-3 mt-3 px-3.5">
+      <div className="pt-10 px-24 lg:flex lg:justify-start gap-20 max-sm:hidden sm:hidden md:hidden 2xl:hidden container">
+        <div className="flex flex-col gap-10 mt-3 px-3.5">
           <div className="border w-40 h-[34px]"></div>
           <div className="flex">
             <Button className="mr-3"></Button>
@@ -260,15 +260,13 @@ export const Footer = () => {
           </div>
           <div className="flex items-center">
             <Button></Button>
-            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto  ml-3">
+            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap">
               Phone number
             </span>
           </div>
         </div>
-
         <hr className="bg-white opacity-10 mt-[30px]" />
-
-        <div className="grid grid-cols-3 mt-3 px-3.5 pt-5">
+        <div className="grid grid-cols-3 gap-24 mt-3 px-3.5 pt-5">
           <div className="">
             <ul className="text-sm text-white font-light ">
               <li className="text-white font-medium text-base">Products</li>
@@ -376,8 +374,8 @@ export const Footer = () => {
 
       {/* ---------------------------------------- */}
 
-      <div className="2xl:flex max-sm:hidden 2xl:justify-evenly sm:hidden md:hidden lg:hidden container ">
-        <div className="flex flex-col items-start justify-between pt-[47px] lg:pl-3.5 xl:pl-0">
+      <div className="pt-6 2xl:flex max-sm:hidden 2xl:gap-32 sm:hidden md:hidden lg:hidden container ">
+        <div className="flex flex-col items-start gap-10 pt-[47px] lg:pl-3.5 xl:pl-0">
           <div className="border w-40 h-[34px]"></div>
           <div className="flex">
             <Button className="mr-3"></Button>
@@ -393,7 +391,7 @@ export const Footer = () => {
 
         <hr className="bg-white opacity-10 mt-[30px]" />
 
-        <div className="grid grid-cols-3 mt-3 px-3.5 pt-5">
+        <div className="grid grid-cols-3 mt-3 px-3.5 pt-5 gap-32">
           <div className="">
             <ul className="text-sm text-white font-light ">
               <li className="text-white font-medium text-base">Products</li>
@@ -444,7 +442,7 @@ export const Footer = () => {
           <div className="">
             <ul>
               <li className="text-white font-medium text-base">Developers</li>
-              <div className="text-white text-xs opacity-50 mt-2.5">
+              <div className="text-white text-xs opacity-50 mt-2.5 ">
                 <a>
                   <li className="text-s12 mt-[12px] leading-[18px]">
                     API Integration
@@ -496,6 +494,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="w-[4%]"></div>
         </div>
       </div>
     </div>

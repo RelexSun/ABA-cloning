@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   return (
-    <div className="3xl:w-[1320px] w-full fixed top-0 backdrop-blur-sm shadow-lg z-10">
-      <div className="flex items-center justify-between py-1 mx-4">
+    <div className="w-full flex items-center justify-center my-0 mx-auto py-6 max-[930px]:h-16 xl:h-24 border fixed top-0 backdrop-blur-md shadow-lg z-10">
+      <div className=" w-full flex items-center border justify-between mx-4 overflow-hidden sm:max-w-[600px] md:max-w-[800px] xl:max-w-[1200px] 2xl:max-w-[1500px]">
         Navbar
         {/* <ul className="flex gap-7 ">
           <li>About</li>
