@@ -42,13 +42,17 @@ const Testimonial = () => {
           <div className="swiper-pagination"></div>
         </Swiper>
       </div>
-      <div className="grid max-sm:hidden sm:grid-cols-2 md:grid-cols-3 sm:gap-4 md:gap-5 lg:px-10">
+      <div className="grid max-sm:hidden sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-5 lg:px-10 text-center ">
         {keyadvantages.map((data, index) => (
           <div key={data.id}>
             <div className="flex flex-col items-center text-center gap-2 h-60">
               <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
-              <h1 className="font-semibold">{data.title}</h1>
-              <p>{data.description}</p>
+              <h1 className="font-semibold md:text-lg xl:text-xl">
+                {data.title}
+              </h1>
+              <p className="md:max-w-[200px] text-[13px] lg:max-w-[240px] lg:text-sm xl:max-w-[250px] xl:text-[16px] min-[1330px]:text-lg">
+                {data.description}
+              </p>
             </div>
           </div>
         ))}

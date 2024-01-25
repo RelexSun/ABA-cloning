@@ -15,17 +15,21 @@ const PaymentSection = () => {
   ];
   return (
     <div>
-      <div className="max-[330px]:w-full max-sm:w-60">
-        <h1 className="sm:text-center text-2xl font-bold mb-3">
+      <div className="max-[330px]:w-full max-sm:w-56 sm:mt-[67px] md:mt-[76px] lg:mt-[106px] xl:mt-[109px] 2xl:mt-[75px] 3xl:mt-[122px]">
+        <h1 className="mb-3 sm:mb-[16px] text-[22px] sm:text-[26px] md:text-[28px] lg:text-[38px] sm:text-center font-bold -mt-[18px] 2xl:-mt-[2px] 3xl:mt-[26px] text-slate-600 sm:leading-[28px] md:leading-[48px] ">
           Payment Solutions for All Business Needs
         </h1>
       </div>
-      <p>
-        ABA PayWay is developed for businesses of all sizes. Regardless of
-        business type and its offerings you can easily accept cashless payments
-        in both KHR and USD currencies.
-      </p>
-      <Tabs tabs={tabs} />
+      <div className="w-full sm:w-[430px] md:w-[530px] xl:w-[720px] m-auto md:flex md:justify-center xl:mt-[24px]">
+        <p className="sm:text-center text-[14px] md:text-[16px] xl:text-lg">
+          ABA PayWay is developed for businesses of all sizes. Regardless of
+          business type and its offerings you can easily accept cashless
+          payments in both KHR and USD currencies.
+        </p>
+      </div>
+      <div className="mt-[24px] xl:mt-[44px] 2xl:mt-[38px] 3xl:mt-[42px]">
+        <Tabs tabs={tabs} />
+      </div>
     </div>
   );
 };

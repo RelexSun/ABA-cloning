@@ -2,9 +2,11 @@ import Marquees from "@/components/ui/marquees";
 
 const BusinessSection = () => {
   return (
-    <div className="flex flex-col items-center my-10">
-      <h1 className="text-xl font-bold mb-3">Business using PayWay</h1>
-      <div className="w-screen h-60 flex flex-col gap-5">
+    <div className="flex flex-col items-center my-10 lg:mt-[120px]">
+      <h1 className="sm:mb-[16px] text-[22px] sm:text-[26px] md:text-[28px] lg:text-[38px] text-center font-bold -mt-[18px] 2xl:-mt-[2px] 3xl:mt-[26px] text-slate-600 leading-[48px]">
+        Business using PayWay
+      </h1>
+      <div className="w-screen flex flex-col gap-3 xl:gap-5 2xl:gap-6">
         <Marquees />
         <Marquees direction="right" />
         <Marquees />

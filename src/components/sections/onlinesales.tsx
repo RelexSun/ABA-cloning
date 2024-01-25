@@ -3,7 +3,7 @@ import onlinesales from "../../../data/onlinesales.json";
 
 const OnlineSales = () => {
   return (
-    <div className="grid sm:grid-cols-2 gap-4 lg:grid-cols-3 mt-4">
+    <div className="grid sm:grid-cols-2 gap-5 lg:grid-cols-3 mt-4">
       {onlinesales.map((data) => (
         <CardComponent
           key={data.id}

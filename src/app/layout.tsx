@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <div className="lg:px-12 px-6 pt-8 pb-5 sm:overflow-hidden md:overflow-visible">
+        <div className="px-6 lg:px-12 pt-8 pb-5 sm:overflow-hidden md:overflow-visible">
           {children}
         </div>
         <Footer />
