@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { RefProps } from "../../../types/interface";
 
-const SolutionSection = () => {
+const SolutionSection = ({ secRef }: RefProps) => {
   return (
     <div className="bg-slate-500 w-full flex flex-col items-center sm:flex-row-reverse">
       <div className="bg-red-500 w-full h-[350px]"></div>
@@ -19,7 +20,11 @@ const SolutionSection = () => {
           Boost your sales by providing seamless payment experience to your
           clients.
         </p>
-        <Button>Explore Now</Button>
+        <Button
+          onClick={() => secRef.current?.scrollIntoView({ behavior: "smooth" })}
+        >
+          Explore Now
+        </Button>
       </div>
     </div>
   );

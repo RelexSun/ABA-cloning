@@ -391,7 +391,7 @@ export const Footer = () => {
 
         <hr className="bg-white opacity-10 mt-[30px]" />
 
-        <div className="grid grid-cols-3 mt-3 px-3.5 pt-5 gap-32">
+        <div className="grid grid-cols-4 mt-3 px-3.5 pt-5 gap-32">
           <div className="">
             <ul className="text-sm text-white font-light ">
               <li className="text-white font-medium text-base">Products</li>
