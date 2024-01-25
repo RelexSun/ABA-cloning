@@ -59,7 +59,7 @@ const DeveloperSection = () => {
               voluptatem cumque facilis! Quod, nisi?
             </p>
           </div>
-          <Button className="w-full mt-[16px] sm:w-36 sm:h-12">
+          <Button className="w-full mt-[16px] sm:w-36 sm:h-12 ">
             Learn more
           </Button>
         </div>

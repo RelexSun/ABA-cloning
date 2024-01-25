@@ -16,7 +16,7 @@ const PaymentSection = () => {
   return (
     <div>
       <div className="max-[330px]:w-full max-sm:w-56 sm:mt-[67px] md:mt-[76px] lg:mt-[106px] xl:mt-[109px] 2xl:mt-[75px] 3xl:mt-[122px]">
-        <h1 className="mb-3 sm:mb-[16px] text-[22px] sm:text-[26px] md:text-[28px] lg:text-[38px] sm:text-center font-bold -mt-[18px] 2xl:-mt-[2px] 3xl:mt-[26px] text-slate-600 sm:leading-[28px] md:leading-[48px] ">
+        <h1 className="mb-3 sm:mb-[16px] text-[22px] sm:text-[26px] md:text-[28px] lg:text-[38px]  sm:text-center font-bold -mt-[18px] 2xl:-mt-[2px] 3xl:mt-[26px] text-slate-600 sm:leading-[28px] md:leading-[48px] ">
           Payment Solutions for All Business Needs
         </h1>
       </div>
