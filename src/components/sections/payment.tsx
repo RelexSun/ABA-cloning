@@ -14,8 +14,8 @@ const PaymentSection = () => {
     { label: "for pay-on-delivery", content: <PayOn /> },
   ];
   return (
-    <div>
-      <div className="max-[330px]:w-full max-sm:w-56 sm:mt-[67px] md:mt-[76px] lg:mt-[106px] xl:mt-[109px] 2xl:mt-[75px] 3xl:mt-[122px]">
+    <>
+      <div className="max-[330px]:w-full max-sm:w-56 sm:mt-[67px] mt-20 md:mt-[96px] lg:mt-[126px] xl:mt-[139px] 2xl:mt-[159px]">
         <h1 className="mb-3 sm:mb-[16px] text-[22px] sm:text-[26px] md:text-[28px] lg:text-[38px]  sm:text-center font-bold -mt-[18px] 2xl:-mt-[2px] 3xl:mt-[26px] text-slate-600 sm:leading-[28px] md:leading-[48px] ">
           Payment Solutions for All Business Needs
         </h1>
@@ -30,7 +30,7 @@ const PaymentSection = () => {
       <div className="mt-[24px] xl:mt-[44px] 2xl:mt-[38px] 3xl:mt-[42px]">
         <Tabs tabs={tabs} />
       </div>
-    </div>
+    </>
   );
 };
 

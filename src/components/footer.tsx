@@ -1,10 +1,20 @@
 import { Button } from "./ui/button";
+import Image from "next/image";
+import footerLogo from "../../public/pw-logo-footer.svg";
 
 export const Footer = () => {
   return (
-    <div className="bg-[#011730] w-full pb-10 sm:pb-16 md:pb-[43px] lg:pb-[47px] xl:pb-[45px] relative">
+    <div className="bg-[#011730] w-full pb-10 mt-20 sm:pb-16 md:pb-[43px] lg:pb-[47px] xl:pb-[45px] relative">
       <div className="px-10 pt-8 sm:hidden md:hidden lg:hidden 2xl:hidden container">
-        <div className="border w-40 h-[30px]"></div>
+        <Image
+          src={footerLogo}
+          alt="footer logo img"
+          style={{
+            height: "30px",
+            width: "auto",
+          }}
+        />
+
         <div className="grid grid-cols-2 mt-8">
           <div className="flex">
             <Button className="mr-3"></Button>
@@ -128,7 +138,15 @@ export const Footer = () => {
 
       <div className="sm:block max-sm:hidden lg:hidden 2xl:hidden pt-8 container">
         <div className="grid grid-cols-3 mt-3 px-3.5">
-          <div className="border w-40 h-[30px]"></div>
+          <Image
+            src={footerLogo}
+            alt="footer logo img"
+            style={{
+              height: "34px",
+              width: "auto",
+            }}
+          />
+
           <div className="flex">
             <Button className="mr-3"></Button>
             <Button></Button>
@@ -253,7 +271,15 @@ export const Footer = () => {
 
       <div className="pt-10 px-24 lg:flex lg:justify-start gap-20 max-sm:hidden sm:hidden md:hidden 2xl:hidden container">
         <div className="flex flex-col gap-10 mt-3 px-3.5">
-          <div className="border w-40 h-[34px]"></div>
+          <Image
+            src={footerLogo}
+            alt="footer logo img"
+            style={{
+              height: "49px",
+              width: "auto",
+            }}
+          />
+
           <div className="flex">
             <Button className="mr-3"></Button>
             <Button></Button>
@@ -376,7 +402,14 @@ export const Footer = () => {
 
       <div className="pt-6 2xl:flex max-sm:hidden 2xl:gap-32 sm:hidden md:hidden lg:hidden container ">
         <div className="flex flex-col items-start gap-10 pt-[47px] lg:pl-3.5 xl:pl-0">
-          <div className="border w-40 h-[34px]"></div>
+          <Image
+            src={footerLogo}
+            alt="footer logo img"
+            style={{
+              height: "49px",
+              width: "auto",
+            }}
+          />
           <div className="flex">
             <Button className="mr-3"></Button>
             <Button></Button>
