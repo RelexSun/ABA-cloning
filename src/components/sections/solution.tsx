@@ -5,7 +5,7 @@ import BG from "../../../public/bg-payment-solution.svg";
 
 const SolutionSection = ({ secRef }: RefProps) => {
   return (
-    <div className="w-full  flex flex-col items-center sm:flex-row-reverse">
+    <div className="w-full lg:[485px] xl:h-[555px] flex flex-col items-center sm:flex-row-reverse">
       <div className="w-full h-[350px] border z-10"></div>
       <div className="w-full">
         <h1 className="text-[28px] mt-6 md:mt-0 md:text-[30px] lg:text-[32px] xl:text-[48px] font-bold text-slate-700 leading-[48px] xl:leading-[56px] md:leading-[46px] 2xl:leading-[76px]">
@@ -27,8 +27,12 @@ const SolutionSection = ({ secRef }: RefProps) => {
           Explore Now
         </Button>
       </div>
-      <div className="absolute right-0 md:h-[392px] lg:h-[462px] xl:h-[628px] 2xl:h-[828px] 3xl:h-[800px] border">
-        <Image src={BG} alt="bg-payment-solution" className=" z-[-1]" />
+      <div className="absolute top-0 right-0 max-[570px]:hidden sm:h-[428px] md:h-[528px] lg:h-[600px] xl:h-[700px] 2xl:h-[828px] border">
+        <Image
+          src={BG}
+          alt="bg-payment-solution"
+          className=" object-cover w-full h-full z-[-1]"
+        />
       </div>
     </div>
   );

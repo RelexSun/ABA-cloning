@@ -22,3 +22,11 @@ body {
     rgba(255, 255, 255, 0.5)
   );
 }
+
+.bg-key-2xl {
+  background-image: url("../../public/2xl-bg-key-advantage.svg");
+}
+
+.bg-key-3xl {
+  background-image: url("../../public/3xl-bg-key-advantage.svg");
+}
