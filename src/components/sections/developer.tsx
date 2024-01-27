@@ -7,6 +7,7 @@ import Image from "next/image";
 import MultiPay from "../../../public/multiple-methods.webp";
 import Dashboard from "../../../public/dashboard.webp";
 import Devs from "../../../public/developer.webp";
+import BG from "../../../public/ellipse-bg.png";
 
 import { Button } from "@/components/ui/button";
 
@@ -31,11 +32,26 @@ const DeveloperSection = () => {
             </p>
           </div>
         </div>
-        <div className="w-full" data-aos="zoom-out">
-          <Image src={MultiPay} alt="multiple-payment-methods" />
+        <div className="w-full relative">
+          <div className="w-full" data-aos="zoom-out">
+            <Image
+              src={MultiPay}
+              alt="multiple-payment-methods"
+              height={600}
+              width={600}
+              className="mx-auto"
+            />
+          </div>
+          <Image
+            src={BG}
+            alt="bg-devs"
+            className="absolute z-[-10] top-0"
+            height={500}
+            width={500}
+          />
         </div>
       </div>
-      <div className="flex flex-col items-center sm:flex-row gap-10">
+      <div className="flex flex-col items-center sm:flex-row gap-10 mt-24">
         <div className="w-full">
           <h1 className="text-xl md:text-[26px] lg:text-[28px] xl:text-[38px] leading-[32px] xl:leading-[48px] font-bold text-slate-700 lg:max-w-[250px] xl:max-w-[330px] 2xl:max-w-full">
             Real-time Merchant Portal
@@ -50,11 +66,17 @@ const DeveloperSection = () => {
           </div>
         </div>
         <div className="w-full" data-aos="zoom-out">
-          <Image src={Dashboard} alt="multiple-payment-methods" />
+          <Image
+            src={Dashboard}
+            alt="multiple-payment-methods"
+            height={600}
+            width={600}
+            className=" mx-auto"
+          />
         </div>
       </div>
 
-      <div className="flex flex-col items-center sm:flex-row-reverse gap-10 ">
+      <div className="flex flex-col items-center sm:flex-row-reverse gap-10 mt-16">
         <div className="w-full">
           <h1 className="text-xl md:text-[26px] lg:text-[28px] xl:text-[38px] leading-[32px] xl:leading-[48px] font-bold text-slate-700 lg:max-w-[250px] xl:max-w-[330px] 2xl:max-w-full">
             Ready for Developers
@@ -67,13 +89,19 @@ const DeveloperSection = () => {
               voluptatem cumque facilis! Quod, nisi?
             </p>
           </div>
-          <Button className="w-full mt-[16px] sm:w-36 sm:h-12 ">
+          <Button className="w-full mt-[16px] sm:w-36 sm:h-12 md:w-44 md:py-7 text-md">
             Learn more
           </Button>
         </div>
 
         <div className="w-full" data-aos="zoom-out">
-          <Image src={Devs} alt="multiple-payment-methods" />
+          <Image
+            src={Devs}
+            alt="multiple-payment-methods"
+            height={600}
+            width={600}
+            className=" mx-auto"
+          />
         </div>
       </div>
     </div>

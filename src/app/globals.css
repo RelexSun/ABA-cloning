@@ -23,10 +23,8 @@ body {
   );
 }
 
-.bg-key-2xl {
-  background-image: url("../../public/2xl-bg-key-advantage.svg");
-}
-
-.bg-key-3xl {
-  background-image: url("../../public/3xl-bg-key-advantage.svg");
-}
+/* .dev-bg {
+  background-image: url("../../public/ellipse-bg.png");
+  background-repeat: no-repeat;
+  object-fit: fill;
+} */

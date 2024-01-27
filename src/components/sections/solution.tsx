@@ -6,7 +6,7 @@ import BG from "../../../public/bg-payment-solution.svg";
 const SolutionSection = ({ secRef }: RefProps) => {
   return (
     <div className="w-full lg:[485px] xl:h-[555px] flex flex-col items-center sm:flex-row-reverse">
-      <div className="w-full h-[350px] border z-10"></div>
+      <div className="w-full h-[350px] z-10"></div>
       <div className="w-full">
         <h1 className="text-[28px] mt-6 md:mt-0 md:text-[30px] lg:text-[32px] xl:text-[48px] font-bold text-slate-700 leading-[48px] xl:leading-[56px] md:leading-[46px] 2xl:leading-[76px]">
           Payment Solution
@@ -22,12 +22,12 @@ const SolutionSection = ({ secRef }: RefProps) => {
         </div>
         <Button
           onClick={() => secRef.current?.scrollIntoView({ behavior: "smooth" })}
-          className="max-sm:hidden z-10"
+          className="max-sm:hidden z-10 px-10 py-7 text-md"
         >
           Explore Now
         </Button>
       </div>
-      <div className="absolute top-0 right-0 max-[570px]:hidden sm:h-[428px] md:h-[528px] lg:h-[600px] xl:h-[700px] 2xl:h-[828px] border">
+      <div className="absolute top-0 right-0 max-[570px]:hidden sm:h-[428px] md:h-[528px] lg:h-[600px] xl:h-[700px] 2xl:h-[828px]">
         <Image
           src={BG}
           alt="bg-payment-solution"

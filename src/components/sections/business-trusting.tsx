@@ -16,7 +16,7 @@ const BusinessSection = () => {
         <Marquees direction="right" />
         <Marquees />
       </div>
-      <div className="w-screen absolute top-20 z-[-1] max-[740px]:hidden">
+      <div className="w-screen absolute top-16 z-[-1] max-[740px]:hidden">
         <Image src={BG} alt="2xl-bg-biz-trusting" />
       </div>
     </div>

@@ -33,7 +33,7 @@ const Testimonial = () => {
           {keyadvantages.map((data, index) => (
             <SwiperSlide key={data.id}>
               <div className="flex flex-col items-center text-center gap-2 h-60">
-                <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
+                <div className="bg-gray-100 w-16 h-16 rounded-full mx-1"></div>
                 <h1 className="font-semibold">{data.title}</h1>
                 <p>{data.description}</p>
               </div>
@@ -46,7 +46,7 @@ const Testimonial = () => {
         {keyadvantages.map((data, index) => (
           <div key={data.id}>
             <div className="flex flex-col items-center text-center gap-2 h-60">
-              <div className="bg-cyan-400 w-16 h-16 rounded-full mx-1"></div>
+              <div className="bg-white w-16 h-16 rounded-full mx-1"></div>
               <h1 className="font-semibold md:text-lg xl:text-xl">
                 {data.title}
               </h1>

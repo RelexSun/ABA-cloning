@@ -35,7 +35,13 @@ const Tabs: React.FC<{ tabs: TabProps[] }> = ({ tabs }) => {
                 className="pb-3 px-8 uppercase"
                 onClick={() => handleTabClick(index)}
               >
-                <p className="text-sm md:text-base xl:text-lg">{tab.label}</p>
+                <p
+                  className={`text-sm md:text-base xl:text-lg font-light ${
+                    active === index ? "font-medium" : ""
+                  }`}
+                >
+                  {tab.label}
+                </p>
               </button>
               <AnimatePresence mode="wait">
                 {active === index && (

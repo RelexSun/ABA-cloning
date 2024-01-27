@@ -7,9 +7,9 @@ interface CardProps {
 
 const CardComponent = ({ title, description }: CardProps) => {
   return (
-    <div className="bg-white rounded-3xl p-[24px] drop-shadow-xl">
+    <div className="bg-white rounded-3xl p-[24px] pb-16 drop-shadow-xl hover:bg-gradient-to-r from-cyan-700 to-cyan-500 hover:text-white">
       <div className="">
-        <div className="bg-cyan-400 w-12 h-12 rounded-full"></div>
+        <div className="bg-gray-100 w-12 h-12 rounded-full"></div>
         <div className=""></div>
       </div>
       <div>
