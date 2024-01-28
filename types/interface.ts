@@ -6,3 +6,8 @@ export interface TabProps {
 export interface RefProps {
   secRef: React.RefObject<HTMLDivElement>;
 }
+
+export interface MenuProps {
+  onToggle: boolean;
+  setToggle: (value: boolean) => void;
+}

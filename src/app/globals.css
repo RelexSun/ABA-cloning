@@ -23,8 +23,6 @@ body {
   );
 }
 
-/* .dev-bg {
-  background-image: url("../../public/ellipse-bg.png");
-  background-repeat: no-repeat;
-  object-fit: fill;
-} */
+.parent:hover .icon {
+  color: white;
+}
