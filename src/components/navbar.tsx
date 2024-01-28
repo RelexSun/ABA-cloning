@@ -68,7 +68,7 @@ export const Navbar = () => {
               <Button
                 variant="outline"
                 style={{ borderWidth: "2px" }}
-                className="max-lg:hidden"
+                className="max-lg:hidden px-2"
               >
                 <IoGlobeOutline
                   className="text-cyan-500 "
