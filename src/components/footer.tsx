@@ -2,6 +2,10 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import footerLogo from "../../public/pw-logo-footer.svg";
 
+import { FaRegEnvelope } from "react-icons/fa";
+import { BsTelephone } from "react-icons/bs";
+import { IoLocationOutline } from "react-icons/io5";
+
 export const Footer = () => {
   return (
     <div className="bg-[#011730] w-full pb-10 mt-20 sm:pb-16 md:pb-[43px] lg:pb-[47px] xl:pb-[45px] relative">
@@ -17,12 +21,18 @@ export const Footer = () => {
 
         <div className="grid grid-cols-2 mt-8">
           <div className="flex">
-            <Button className="mr-3"></Button>
-            <Button></Button>
+            <Button className="mr-3" variant="footer">
+              <FaRegEnvelope />
+            </Button>
+            <Button variant="footer">
+              <IoLocationOutline />
+            </Button>
           </div>
           <div className="flex items-center">
-            <Button></Button>
-            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto  ml-3">
+            <Button variant="footer">
+              <BsTelephone />
+            </Button>
+            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap">
               Phone number
             </span>
           </div>
@@ -148,12 +158,18 @@ export const Footer = () => {
           />
 
           <div className="flex">
-            <Button className="mr-3"></Button>
-            <Button></Button>
+            <Button className="mr-3" variant="footer">
+              <FaRegEnvelope />
+            </Button>
+            <Button variant="footer">
+              <IoLocationOutline />
+            </Button>
           </div>
           <div className="flex items-center">
-            <Button></Button>
-            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto  ml-3">
+            <Button variant="footer">
+              <BsTelephone />
+            </Button>
+            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap">
               Phone number
             </span>
           </div>
@@ -281,11 +297,17 @@ export const Footer = () => {
           />
 
           <div className="flex">
-            <Button className="mr-3"></Button>
-            <Button></Button>
+            <Button className="mr-3" variant="footer">
+              <FaRegEnvelope />
+            </Button>
+            <Button variant="footer">
+              <IoLocationOutline />
+            </Button>
           </div>
           <div className="flex items-center">
-            <Button></Button>
+            <Button variant="footer">
+              <BsTelephone />
+            </Button>
             <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap">
               Phone number
             </span>
@@ -411,12 +433,18 @@ export const Footer = () => {
             }}
           />
           <div className="flex">
-            <Button className="mr-3"></Button>
-            <Button></Button>
+            <Button className="mr-3" variant="footer">
+              <FaRegEnvelope />
+            </Button>
+            <Button variant="footer">
+              <IoLocationOutline />
+            </Button>
           </div>
-          <div className="flex">
-            <Button></Button>
-            <span className="text-lg text-white font-light opacity-50  font-roboto  ml-3">
+          <div className="flex items-center">
+            <Button variant="footer">
+              <BsTelephone />
+            </Button>
+            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap">
               Phone number
             </span>
           </div>
