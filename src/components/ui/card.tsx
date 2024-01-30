@@ -1,15 +1,14 @@
 import { FaArrowRight } from "react-icons/fa";
+import { CardProps } from "../../../types/interface";
+import Image from "next/image";
 
-interface CardProps {
-  title: string;
-  description: string;
-}
-
-const CardComponent = ({ title, description }: CardProps) => {
+const CardComponent = ({ title, description, icon }: CardProps) => {
   return (
     <div className="bg-white rounded-3xl p-[24px] pb-16 drop-shadow-xl hover:bg-gradient-to-r from-cyan-700 to-cyan-500 hover:text-white parent">
       <div className="flex items-center justify-between">
-        <div className="bg-gray-100 w-12 h-12 rounded-full"></div>
+        <div className="bg-gray-100 w-12 h-12 rounded-full flex items-center justify-center">
+          <Image src={icon} alt="icon" />
+        </div>
         <FaArrowRight className="text-cyan-700 icon" />
       </div>
       <div>

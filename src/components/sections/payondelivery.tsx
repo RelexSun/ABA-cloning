@@ -2,6 +2,9 @@ import CardComponent from "@/components/ui/card";
 import payondelivery from "../../../data/payondelivery.json";
 import Image from "next/image";
 import image from "../../../public/delivery.svg";
+import icon1 from "../../../public/aba-merchant-app.svg";
+import icon2 from "../../../public/invoicing-tool.svg";
+import icon3 from "../../../public/aba-merchant-app.svg";
 
 const PayOn = () => {
   return (
@@ -13,15 +16,18 @@ const PayOn = () => {
         <CardComponent
           title={payondelivery[0].title}
           description={payondelivery[0].discription}
+          icon={icon1}
         />
         <CardComponent
           title={payondelivery[1].title}
           description={payondelivery[1].discription}
+          icon={icon2}
         />
         <div className="col-start-1">
           <CardComponent
             title={payondelivery[2].title}
             description={payondelivery[2].discription}
+            icon={icon3}
           />
         </div>
         <div className="flex justify-end max-sm:hidden lg:hidden">

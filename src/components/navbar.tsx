@@ -6,20 +6,17 @@ import logo from "../../public/payway-logo.svg";
 import { CiGlobe } from "react-icons/ci";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoGlobeOutline } from "react-icons/io5";
-import BurgerMenu from "@/components/ui/burgerMenu";
+import BurgerMenu from "./ui/burgerMenu";
 import { useState } from "react";
 
 export const Navbar = () => {
-  const [MenuToggle, setMenuToggle] = useState<boolean>(false);
+  const [toggle, setToggle] = useState<boolean>(false);
 
   return (
-    <>
-      <div className={MenuToggle ? "z-[100]" : "hidden"}>
-        <BurgerMenu onToggle={MenuToggle} setToggle={setMenuToggle} />
-      </div>
-      <div className="w-full flex items-center justify-center h-14 sm:h-16 lg:h-24 fixed top-0 backdrop-blur-md z-20">
+    <div className="relative">
+      <div className=" w-full flex items-center justify-center h-14 sm:h-16 lg:h-24 fixed top-0 backdrop-blur-md z-20">
         <div className=" w-full flex items-center justify-between mx-4 overflow-hidden sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] 2xl:max-w-[1500px]">
-          <div className="sm:h-[14px] md:h-[16px] lg:h-[18px] xl:h-[24px] 2xl:h-[22px] 2xl:w-[220px]">
+          <button className="sm:h-[14px] md:h-[16px] lg:h-[18px] xl:h-[24px] 2xl:h-[22px] 2xl:w-[220px]">
             <Image
               src={logo}
               alt="logo-img"
@@ -27,7 +24,7 @@ export const Navbar = () => {
               width={220}
               height={22}
             />
-          </div>
+          </button>
           <div className="flex items-center gap-10">
             <ul className="flex gap-7 max-lg:hidden xl:text-xl">
               <a href="#" className="hover:text-cyan-500">
@@ -60,7 +57,7 @@ export const Navbar = () => {
                 variant="outline"
                 size="sm"
                 className="text-cyan-500 lg:hidden"
-                onClick={() => setMenuToggle(true)}
+                onClick={() => setToggle(!toggle)}
               >
                 <RiMenu3Fill className="text-cyan-500" />
               </Button>
@@ -87,7 +84,10 @@ export const Navbar = () => {
             </div>
           </div>
         </div>
+        <div className={toggle ? "absolute top-14 right-6" : "hidden"}>
+          <BurgerMenu />
+        </div>
       </div>
-    </>
+    </div>
   );
 };

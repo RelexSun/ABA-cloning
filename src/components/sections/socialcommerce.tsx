@@ -2,6 +2,9 @@ import CardComponent from "@/components/ui/card";
 import solcialcommerce from "../../../data/socialcommerce.json";
 import Image from "next/image";
 import image from "../../../public/social_commerce.svg";
+import icon1 from "../../../public/aba-merchant-app.svg";
+import icon3 from "../../../public/invoicing-tool.svg";
+import icon2 from "../../../public/experience.svg";
 
 const SocialCommerce = () => {
   return (
@@ -13,15 +16,18 @@ const SocialCommerce = () => {
         <CardComponent
           title={solcialcommerce[0].title}
           description={solcialcommerce[0].discription}
+          icon={icon1}
         />
         <CardComponent
           title={solcialcommerce[1].title}
           description={solcialcommerce[1].discription}
+          icon={icon2}
         />
         <div className="col-start-1">
           <CardComponent
             title={solcialcommerce[2].title}
             description={solcialcommerce[2].discription}
+            icon={icon3}
           />
         </div>
         <div className="flex justify-end max-sm:hidden lg:hidden">
