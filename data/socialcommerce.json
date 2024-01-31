@@ -2,16 +2,19 @@
   {
     "id": "ABA Merchant App",
     "title": "ABA Merchant App",
-    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration.",
+    "under_des": "Turn your phone to mobile-POS"
   },
   {
     "id": "Payment Link",
     "title": "Payment Link",
-    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration.",
+    "under_des": "Easiest way to get paid"
   },
   {
     "id": "Invoicing Tool",
     "title": "Invoicing Tool",
-    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration.",
+    "under_des": "Start selling without having website"
   }
 ]

@@ -2,16 +2,19 @@
   {
     "id": "ABA Merchant App",
     "title": "ABA Merchant App",
-    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration.",
+    "under_des": "Turn your phone to mobile-POS"
   },
   {
     "id": "Payment QR API",
     "title": "Payment QR API",
-    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration.",
+    "under_des": "Display payment QR on any screen"
   },
   {
     "id": "Printed ABA KHQR",
     "title": "Printed ABA KHQR",
-    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration."
+    "discription": "Provide your clients with seamless checkout experience in your website or mobile app with simple API Integration.",
+    "under_des": "Get paid cashless"
   }
 ]

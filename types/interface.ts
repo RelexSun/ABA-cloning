@@ -19,3 +19,24 @@ export interface ModalProps {
   label: string;
   icon: StaticImport | string;
 }
+
+export interface MenuProps {
+  toggle?: boolean;
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface MenuProp2 {
+  productToggle?: boolean;
+  setProductToggle: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface MenuProp3 {
+  translateToggle?: boolean;
+  setTranslateToggle: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export interface OverlayProps {
+  setToggle: React.Dispatch<React.SetStateAction<boolean>>;
+  setProductToggle: React.Dispatch<React.SetStateAction<boolean>>;
+  setTranslateToggle: React.Dispatch<React.SetStateAction<boolean>>;
+}
