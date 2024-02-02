@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import {
   MdOutlineAccountCircle,
@@ -16,8 +17,11 @@ import icon5 from "../../../public/invoicing-tool.svg";
 import icon6 from "../../../public/virtual-terminal.svg";
 import icon7 from "../../../public/aba-merchant-app.svg";
 import icon9 from "../../../public/earth.svg";
+import { usePathname } from "next/navigation";
 
 const BurgerMenu = ({ setToggle }: MenuProps) => {
+  const pathName = usePathname();
+
   const menuItems: ModalProps[] = [
     {
       label: "Invoicing Tool",
@@ -76,7 +80,14 @@ const BurgerMenu = ({ setToggle }: MenuProps) => {
       <div className="grid grid-cols-2 gap-5 mb-5">
         <div className="flex items-center gap-1 text-[13px]">
           <MdCreditScore className="text-slate-400" size={20} />
-          <span className="hover:text-cyan-500">Developers</span>
+          <Link
+            href="/developers"
+            className={`hover:text-cyan-500 ${
+              pathName === "/developers" && "text-cyan-500"
+            }`}
+          >
+            Developers
+          </Link>
         </div>
         <div className="flex items-center gap-1 text-[13px]">
           <MdOutlineEditNote className="text-slate-400" size={20} />
@@ -84,7 +95,14 @@ const BurgerMenu = ({ setToggle }: MenuProps) => {
         </div>
         <div className="flex items-center gap-1 text-[13px]">
           <MdOutlineAccountCircle className="text-slate-400" size={20} />
-          <span className="hover:text-cyan-500">About Us</span>
+          <Link
+            href="/about"
+            className={`hover:text-cyan-500 ${
+              pathName === "/about" && "text-cyan-500"
+            }`}
+          >
+            About Us
+          </Link>
         </div>
       </div>
       <div className="w-full flex items-center justify-center">

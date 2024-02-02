@@ -14,6 +14,7 @@ import BGxxl from "../../../public/xxl-bg-developer.svg";
 import BGlg from "../../../public/bg-ready-developer.svg";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const DeveloperSection = () => {
   useEffect(() => {
@@ -126,9 +127,11 @@ const DeveloperSection = () => {
                 voluptatem cumque facilis! Quod, nisi?
               </p>
             </div>
-            <Button className="w-full mt-[16px] sm:w-36 sm:h-12 md:w-44 md:py-7 text-md">
-              Learn more
-            </Button>
+            <Link href="/developers">
+              <Button className="w-full mt-[16px] sm:w-36 sm:h-12 md:w-44 md:py-7 text-md">
+                Learn more
+              </Button>
+            </Link>
           </div>
 
           <div className="w-full" data-aos="zoom-out">

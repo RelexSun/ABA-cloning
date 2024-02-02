@@ -26,3 +26,22 @@ body {
 .parent:hover .icon {
   color: white;
 }
+
+.bg-1 {
+  background-image: url("../../public/xl-register-sandbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-2 {
+  background-image: url("../../public/xl-setup-integration.svg");
+  background-repeat: no-repeat;
+}
+
+.bg-3 {
+  background-image: url("../../public/xl-test-go-live.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

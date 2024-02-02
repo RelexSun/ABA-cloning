@@ -32,7 +32,7 @@ export const Footer = () => {
             <Button variant="footer">
               <BsTelephone />
             </Button>
-            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap">
+            <span className="text-lg text-white font-light opacity-50 leading-6 font-roboto ml-3 text-nowrap max-[360px]:text-wrap">
               Phone number
             </span>
           </div>
