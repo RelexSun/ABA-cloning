@@ -10,8 +10,9 @@ import {
   SocialCommerce,
   PayOn,
 } from "./productTestimonial";
+import { MenuProp2 } from "../../../types/interface";
 
-const ProductModal = () => {
+const ProductModal = ({ setProductToggle }: MenuProp2) => {
   const [active, setActive] = useState<number>(0);
 
   const animation = {
@@ -33,7 +34,7 @@ const ProductModal = () => {
         <ul>
           <div
             className={`flex items-center mb-2 justify-between rounded-lg ${
-              active === 0 && "hover:bg-slate-100 hover:text-cyan-500 font-bold"
+              active === 0 && "bg-slate-100 text-cyan-500 font-bold"
             } py-2 px-3`}
             onMouseEnter={() => setActive(0)}
           >
@@ -44,8 +45,7 @@ const ProductModal = () => {
           </div>
           <div
             className={`flex items-center mb-2 justify-between rounded-lg ${
-              active === 1 &&
-              "hover:bg-slate-100 hover:text-cyan-500 font-medium"
+              active === 1 && "bg-slate-100 text-cyan-500 font-bold"
             } py-2 px-3`}
             onMouseEnter={() => setActive(1)}
           >
@@ -56,8 +56,7 @@ const ProductModal = () => {
           </div>
           <div
             className={`flex items-center mb-2 justify-between rounded-lg ${
-              active === 2 &&
-              "hover:bg-slate-100 hover:text-cyan-500 font-medium"
+              active === 2 && "bg-slate-100 text-cyan-500 font-bold"
             } py-2 px-3`}
             onMouseEnter={() => setActive(2)}
           >
@@ -68,8 +67,7 @@ const ProductModal = () => {
           </div>
           <div
             className={`flex items-center mb-2 justify-between rounded-lg ${
-              active === 3 &&
-              "hover:bg-slate-100 hover:text-cyan-500 font-medium"
+              active === 3 && "bg-slate-100 text-cyan-500 font-bold"
             } py-2 px-3`}
             onMouseEnter={() => setActive(3)}
           >
