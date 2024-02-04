@@ -4,7 +4,6 @@ import InStore from "./instoresales";
 import PayOn from "./payondelivery";
 import SocialCommerce from "./socialcommerce";
 import { TabProps } from "../../../types/interface";
-import { motion } from "framer-motion";
 
 const PaymentSection = () => {
   const tabs: TabProps[] = [

@@ -8,6 +8,7 @@ import { CiGlobe } from "react-icons/ci";
 import { RiMenu3Fill } from "react-icons/ri";
 import { IoGlobeOutline } from "react-icons/io5";
 import BurgerMenu from "./ui/burgerMenu";
+import Translate from "./ui/translate";
 import { useState } from "react";
 import ProductModal from "./ui/productModal";
 import Overlay from "./ui/overlay";
@@ -41,11 +42,20 @@ export const Navbar = () => {
       <div
         className={
           productToggle
-            ? "fixed w-[500px] right-56 top-16  z-40 mt-4"
+            ? "fixed w-[500px] right-[30%] top-16  z-40 mt-4"
             : "hidden"
         }
       >
         <ProductModal setProductToggle={setProductToggle} />
+      </div>
+      <div
+        className={
+          translateToggle
+            ? "fixed right-[10%] min-[1800px]:right-[23%] top-16  z-40 mt-4"
+            : "hidden"
+        }
+      >
+        <Translate />
       </div>
 
       <div className=" w-full flex items-center justify-center h-14 sm:h-16 lg:h-24 fixed top-0 backdrop-blur-md z-20">
@@ -98,7 +108,12 @@ export const Navbar = () => {
                 Apply Now
               </Button>
 
-              <Button variant="outline" size="sm" className="lg:hidden">
+              <Button
+                variant="outline"
+                size="sm"
+                className="lg:hidden"
+                onClick={() => setTranslateToggle(true)}
+              >
                 <CiGlobe className="text-cyan-500" />
               </Button>
 
@@ -115,6 +130,7 @@ export const Navbar = () => {
                 variant="outline"
                 style={{ borderWidth: "2px" }}
                 className="max-lg:hidden px-2"
+                onClick={() => setTranslateToggle(true)}
               >
                 <IoGlobeOutline
                   className="text-cyan-500 "

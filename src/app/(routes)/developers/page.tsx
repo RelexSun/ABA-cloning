@@ -27,9 +27,10 @@ const Developers = () => {
           <Image src={img} alt="image" width={500} />
         </div>
       </div>
-      <div className="mt-16 w-full max-lg:mt-10">
+      <div className="mt-16 m-auto max-lg:mt-10 2xl:max-w-[1300px]">
         <ApiSection />
       </div>
+
       <HowToStart />
     </>
   );
